@@ -1,0 +1,3 @@
+const ID='G-MY4R90M3CB';
+export function initAnalytics(){if(window.gtag)return;const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',ID,{allow_google_signals:false});}
+export function trackEvent(name,params={}){window.gtag?.('event',name,params);}
